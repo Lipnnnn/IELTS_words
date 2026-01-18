@@ -353,7 +353,7 @@ onUnmounted(() => {
 
 @media (max-width: 768px) {
   .flashcard {
-    height: 350px;
+    min-height: 350px;
   }
 
   .word-display {

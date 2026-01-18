@@ -48,7 +48,8 @@ const words = ref([])
 // 从 YAML 文件加载单词
 const loadWordsFromYAML = async () => {
   try {
-    const response = await fetch('/static/word-list-01.yaml')
+    // 使用 import.meta.env.BASE_URL 来适配 GitHub Pages 路径
+    const response = await fetch(`${import.meta.env.BASE_URL}static/word-list-01.yaml`)
     const yamlText = await response.text()
     const data = yaml.load(yamlText)
     

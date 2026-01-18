@@ -1,0 +1,588 @@
+# ==============================================================================
+# Word List 01
+# ==============================================================================
+
+emperor:   
+  title: emperor
+  text: __emperor__ [ˈempərə(r)] n. 皇帝；君主
+  simple: A ruler of an empire, the highest leader of a country
+  chinese: 皇帝；最高统治者
+  example: The emperor;s wisdom and leadership united the diverse regions of his vast empire.
+
+exact:    
+  title: exact
+  text: __exact__ [ɪgˈzækt] a. 精确的；准确的
+  simple: Completely correct and accurate in every detail
+  chinese: 精确的；准确的
+  example: The scientist needed the exact measurements to ensure the experiment would yield accurate results.
+
+traditional: 
+  title: traditional
+  text: __traditional__ [trəˈdɪʃənl] a. 传统的，惯例的；口传的，传说的
+  simple: Following customs or beliefs that have been passed down for a long time
+  chinese: 传统的；习俗的
+  example: During the festival, the villagers performed a traditional dance that had been passed down through generations.
+
+lack:     
+  title: lack
+  text: __lack__ [læk] n./vt. 缺乏，不足，没有 to have too little of something, be without
+  simple: Not having enough of something that you need
+  chinese: 缺乏；不足
+  example: Without that morning meal, the body may lack the necessary fuel for energy
+
+pardon:   
+  title: pardon
+  text: |
+    __pardon__ [ˈpɑːdn] excl.（用于请求别人重复某事）什么，请再说一遍 
+
+    __pardon__ n./vt. 原谅，宽恕；赦免
+  simple: To forgive someone for doing something wrong
+  chinese: 原谅；宽恕
+  example: Afer accidentally stepping on his friend's foot, Jake quickly said, "Pardon me, I didn't mean to hurt you."
+
+regent:    
+  title: regent
+  text: __regent__ [ˈriːdʒənt] n. 摄政者（代国王统治者）
+  simple: A person who rules a country when the king or queen is too young or unable to
+  chinese: 摄政王；代理统治者
+  example: During the young king's minority, the regent managed the kingdom's affairs with wisdom and fairness.
+
+burgeon:  
+  title: burgeon
+  text: __burgeon__ [ˈbɜːdʒən] vi. 迅速成长；发展
+  simple: To grow or develop very quickly
+  chinese: 迅速发展；快速成长
+  example: With the arrival of spring, the garden begun to burgeon with vibrant flowers and lush greenery.
+
+argue:    
+  title: argue
+  text: __argue__ [ˈɑːgjuː] v. 争论；说服
+  simple: To disagree and talk about reasons for different opinions
+  chinese: 争论；辩论
+  example: Despite their best effort to remain calm, they continued to argue about the best approach to the project.
+
+barely:
+  title: barely
+  text: __barely__ [ˈbeəli] ad. 仅仅，几乎不；赤裸裸地，无遮蔽地
+  simple: Only just, almost not
+  chinese: 仅仅；几乎不
+  example: She was so tired that she could barely keep her eyes open during the meeting.
+
+methane:  
+  title: methane
+  text: __methane__ [ˈmiːθeɪn] n. 甲烷，沼气
+  simple: A gas with no color or smell, used for fuel and heating
+  chinese: 甲烷；沼气
+  example: Methane is potent greenhouse gas that is released during the decomposition of organic matter in landfills.
+
+hierarchy: 
+  title: hierarchy
+  text: __hierarchy__ [ˈhaɪərɑːkɪ] n. 领导层；层次，等级
+  simple: A system where people or things are organized by rank or importance
+  chinese: 等级制度；层次结构
+  example: In the corporate hierachy, the decisions of the senior management team significantly influence the company's overall strategy.
+
+guidance: 
+  title: guidance
+  text: __guidance__ [ˈgaɪdns] n. 指引，指导
+  simple: Help and advice about how to do something
+  chinese: 指导；引导
+  example: She sought guidance from her mentor to help navigate the challenges of her new role at work.
+
+easy-going: 
+  title: easy-going
+  text: __easy-going__ [ˈiːziˏgəuɪŋ] a. 脾气随和的，心平气和的；随便的
+  simple: Relaxed and calm, not easily worried or angry
+  chinese: 随和的；性格温和的
+  example: His easy-going made him a favorite among his colleagues, as he always remained calm and approachable under preesure.
+
+electrical: 
+  title: electrical
+  text: __electrical__ [ɪˈlektrɪkl] a. 电的，电学的，有关电的
+  simple: Related to or using electricity
+  chinese: 电的；与电有关的
+  example: The electrician was called to fix a problem with the building's electrical wiring to ensure all the lights and outlets were functioning properly.
+
+electronic: 
+  title: electronic
+  text: __electronic__ [‚ɪlek'trɒnɪk] a. 电子的
+  simple: Using small electric parts like computer chips
+  chinese: 电子的；电子设备的
+  example: She prefers using electronic books because they are more convenient to carry and can be read on various devices.
+
+roll-film: 
+  title: roll film
+  text:   __roll__  __film__ 胶卷
+  simple: A long strip of special material used in old cameras to take photos
+  chinese: 胶卷；照相底片
+  example: To capture the vintage aesthetic, they decided to use roll film instead of digital cameras for their photography project.
+
+philosophy: 
+  title: philosophy
+  text: __philosophy__ [fɪˈlɔsəfɪ] n. 哲学；哲理
+  simple: The study of ideas about life, knowledge, and what is right
+  chinese: 哲学；人生观
+  example: Her philosophy on life emphasizes the importance of kindness and living in the present monment.
+
+chronic:   
+  title: chronic
+  text: __chronic__ [ˈkrɔnɪk] a. （疾病）慢性的；积习难改的
+  simple: A problem or illness that continues for a very long time
+  chinese: 慢性的；长期的
+  example: He suffers from chronic back pain that has persisted for years despite various treatments.
+
+desirable: 
+  title: desirable
+  text: __desirable__ [dɪˈzaɪərəbl] a. 值得拥有的；合意的；可取的，有利的
+  simple: Worth having or wanting because it is good or useful
+  chinese: 值得拥有的；令人向往的
+  example: Having a flexible work schedule is highly desirable to many employees as it allows for better work-life balance.
+
+consortium: 
+  title: consortium
+  text: __consortium__ [kənˈsɔːtɪəm] n. 集团；财团；社团，协会
+  simple: A group of companies or organizations working together
+  chinese: 财团；联盟
+  example: The university formed a consortium with several leading technology companies to advance research in artificial intelligence.
+
+buckle:    
+  title: buckle
+  text: |
+    __buckle__ [ˈbʌkl] n. 皮带扣环 
+
+    __buckle__ v. 扣紧；（使）变形；弯曲
+  simple: To fasten something with a metal clip, or to bend under pressure
+  chinese: 扣紧；扣环
+  example: Before starting the hike, make sure to buckle your backpack straps securely to avoid any discomfort on the trail.
+
+curry:     
+  title: curry
+  text: |
+    __curry__ [ˈkʌrɪ] n. 咖喱，咖喱饭菜  
+
+    __curry__ vt. 把（肉、蔬菜等）做成咖喱食品；梳刷（马毛等）
+  simple: A type of spicy food from India, or to make food with these spices
+  chinese: 咖喱；咖喱食品
+  example: Last night, I made a delicious chicken curry with a blend of aromatic spices and fresh vegetables.
+
+subliminal: 
+  title: subliminal
+  text: __subliminal__ [ˏsʌbˈlɪmɪnl] a. 下意识的，潜意识的
+  simple: Affecting your mind without you knowing it
+  chinese: 潜意识的；下意识的
+  example: The advertisement used sublimnial messages to subtly influence viewers' purchasing decisions without their conscious awareness.
+
+chamber:  
+  title: chamber
+  text: __chamber__ [ˈtʃeɪmbə(r)] n. 室；洞穴；（枪）膛
+  simple: A room or space inside something, often used for a special purpose
+  chinese: 室；房间；腔
+  example: The scientist carefully adjusted the pressure inside the vacuum chamber before conducting the experiment.
+
+frequent: 
+  title: frequent
+  text: __frequent__ [ˈfriːkwənt] a. 频繁的，常见的，常用的
+  simple: Happening often or many times
+  chinese: 频繁的；经常的
+  example: She made frequent visit to the library to study for her upcoming exams.
+
+prosperous: 
+  title: prosperous
+  text: __prosperous__ [ˈprɔspərəs] a. 繁荣的，兴旺的；成功的
+  simple: Successful and having a lot of money
+  chinese: 繁荣的；成功的
+  example: Afer years of hard work and dedication, the small business became a prosperous enterprise with a growing customer base.
+
+purpose:  
+  title: purpose
+  text: |
+    __purpose__ [ˈpɜːpəs] n. 目的，意图；用途，效果  
+
+    __purpose__ v. 打算，企图，决心
+  simple: The reason why you do something or why something exists
+  chinese: 目的；意图
+  example: She approached her new role with a clear sense of purpose, determined to make a meaningful impact on the team.
+
+variety:  
+  title: variety
+  text: __variety__ [vəˈraɪətɪ]  n. 品种，种类；变化，多样化
+  simple: Many different types of things or people
+  chinese: 多样性；种类
+  example: The farmers's market offers a wide variety of fresh fruits and vegetables, ensuring that there's something for everyone.
+
+immigration: 
+  title: immigration
+  text: __immigration__ [‚ɪmɪ'greɪʃn] n. 外来的移民；移居
+  simple: When people come to live in a different country
+  chinese: 移民；移居
+  example: Immigration policies play a crucial role in shaping the demographic and economic landscape of a country.
+
+natural:  
+  title: natural
+  text: __natural__ [ˈnætʃrəl] a. 正常的，普通的，自然的；自然界的，天然的；天赋的，固有的
+  simple: Existing in nature, not made by people
+  chinese: 自然的；天然的
+  example: She preferred using natural ingredients in her cooking to ensure the meals were both healthy and flavorful.
+
+bet:      
+  title: bet
+  text: |
+    __bet__ [bet] v. 赌，打赌  
+
+    __bet__ n. 打赌，赌注
+  simple: To risk money on the result of something uncertain
+  chinese: 打赌；赌注
+  example: He placed a bet on the soccer match, hoping his favorite team would win.
+
+consumer:  
+  title: consumer
+  text: __consumer__ [kənˈsjuːmə(r)] n. 消费者；用户
+  simple: A person who buys and uses products or services
+  chinese: 消费者；顾客
+  example: Modern companies need to understand consumer preferences to tailor their products and marketing strategies effectively.
+
+physician: 
+  title: physician
+  text: __physician__ [fɪˈzɪʃn] n. 内科医生，医师
+  simple: A doctor who treats illnesses and health problems
+  chinese: 医生；内科医师
+  example: The physician carefully reviewed the patient's medical history before recommending a treatment plan.
+
+equal:     
+  title: equal
+  text: |
+    __equal__ [ˈiːkwəl] a. 相等的  
+
+    __equal__ vt. 比得上
+  simple: The same in amount, size, or value
+  chinese: 相等的；平等的
+  example: Everyone in the team was given an equal opportunity to contribute ideas during the brainstorming session.
+
+resort:   
+  title: resort
+  text: |
+    __resort__ [rɪˈzɔːt] n. 求助；诉诸；胜地  
+
+    __resort__ vi. 求助；诉诸
+  simple: A place where people go for vacation, or to use something as a solution
+  chinese: 度假胜地；求助
+  example: After trying various treatments without success, she decided to resort to a more advanced medical procedure.
+
+leadership: 
+  title: leadership
+  text: __leadership__ [ˈli:dəʃɪp] n. 领导，领导层；领导能力
+  simple: The ability to guide and direct other people
+  chinese: 领导；领导能力
+  example: Effective leadship requires not only the ability to make strategic decisions but also the skill to inspire and motivate a team toward achieving common goals.
+
+equity:   
+  title: equity
+  text: __equity__ [ˈekwətɪ] n. 公平，公正
+  simple: Fair and equal treatment for everyone
+  chinese: 公平；公正
+  example: The company's commitment to equity is evident in its diverse hiring practices and equal opportunity policies.
+
+excavate: 
+  title: excavate
+  text: __excavate__ [ˈekskəveɪt] vt. 挖掘，开凿
+  simple: To dig in the ground to find old objects or build something
+  chinese: 挖掘；发掘
+  example: The archaeologists worked diligently to excavate the ancient ruins and uncover artifacts from the past.
+
+nuclear:  
+  title: nuclear
+  text: __nuclear__ [ˈnjuːklɪə(r)] a. 核能的，原子能的
+  simple: Related to the energy produced by splitting atoms
+  chinese: 核能的；原子能的
+  example: The nuclear reactor provides a significant portion of the country's energy needs.
+
+mutual:    
+  title: mutual
+  text: __mutual__ [ˈmjuːtʃuəl] a. 相互的；共同的
+  simple: Shared by two or more people, felt or done by both sides
+  chinese: 相互的；共同的
+  example: Their decision to collaborate on he project was based on mutual trust and respect.
+
+hectare:  
+  title: hectare
+  text: __hectare__ [ˈhekteə(r)] n. 公顷
+  simple: A unit for measuring area of land, equal to 10,000 square meters
+  chinese: 公顷（土地面积单位）
+  example: The farm covers an area of 50 hectares, which allows for a diverse range of crops.
+
+density:   
+  title: density
+  text: __density__ [ˈdensətɪ] n. 密集；浓度，密度
+  simple: How much of something is packed into a space
+  chinese: 密度；浓度
+  example: The density of the new material makes it ideal for use in lightweight, durable construction.
+
+massive:   
+  title: massive
+  text: __massive__ [ˈmæsɪv] a. 大而重的，厚实的，粗大的；大量的，大规模的 huge
+  simple: Very large, heavy, or impressive in size
+  chinese: 巨大的；大量的
+  example0: this memorial is home to a massive statue of President Abraham Lincoln and an engraved copy of Lincoln's famous speech, the Gettysburg Address
+  exampel1: one important similarity between Brazil and the United States is their massive size 
+
+congratulate: 
+  title: congratulate
+  text: __congratulate__ [kənˈgrætʃuleɪt] vt. 祝贺
+  simple: To tell someone you are happy about their success
+  chinese: 祝贺；恭喜
+  example: I want to congratulate you on your recent promotion; you truly deserve it!
+
+companion: 
+  title: companion
+  text: __companion__ [kəmˈpænɪən] n. 共事者；同伴
+  simple: A person or animal that you spend time with
+  chinese: 同伴；伙伴
+  example: She brought her loyral dog along as her companion on the long road trip.
+
+rig:       
+  title: rig
+  text: |
+    __rig__ [rɪg] vt. 操纵，垄断  
+
+    __rig__ n. 船桅（或船帆等）的装置；成套器械
+  simple: Equipment or structure used for a special purpose, or to set up dishonestly
+  chinese: 装备；操纵
+  example: The crew worked quickly to rig the sailboat for the upcoming race.
+
+input:    
+  title: input
+  text: |
+    __input__ [ˈɪnput] n. 投入，输入；输入的数据  
+
+    __input__ vt. 把……输入计算机
+  simple: Information or ideas put into a system or discussion
+  chinese: 输入；投入
+  example: The software requires input to customize the settings according to individual preferences.
+
+merely:   
+  title: merely
+  text: __merely__ [ˈmiəli] ad. 仅仅，只不过
+  simple: Only, just, and nothing more
+  chinese: 仅仅；只不过
+  example: She was merely trying to help, but it was misunderstood as interference.
+
+impart:    
+  title: impart
+  text: __impart__ [ɪmˈpɑːt] vt. 给予，赋予；传授；告知，透露
+  simple: To give knowledge or information to someone
+  chinese: 传授；告知
+  example: The teacher's goal is to impart knowledge and inspire curiosity in her students.
+
+forfeit:  
+  title: forfeit
+  text: |
+    __forfeit__ [ˈfɔːfɪt] v. （因犯规等而）丧失，失去  
+
+    __forfeit__ n. 罚款；代价
+  simple: To lose something as a punishment for doing wrong
+  chinese: 丧失；罚款
+  example: If you fail to attend the mandatory training session, you may forfeit your eligibility for the promotion.
+
+calorie:   
+  title: calorie
+  text: __calorie__ [ˈkælərɪ] n. 卡（路里）， 大卡（食物的热量）
+  simple: A unit that measures how much energy food gives your body
+  chinese: 卡路里；热量单位
+  exampel: To maintain a healthy weight, it's important to monitor your daily calorie intake and balance it with physical activity.
+
+van:       
+  title: van
+  text: __van__ [væn] n. 运货车
+  simple: A large vehicle used for carrying goods or people
+  chinese: 货车；厢式货车
+  example: We rented a van for our family vacation to fill all our luggage and make the journey more comfortable.
+
+ventilation: 
+  title: ventilation
+  text: __ventilation__ [ˌventɪ'leɪʃn] n. 空气流通；通风设备，通风方法
+  simple: The movement of fresh air in and out of a room or building
+  chinese: 通风；空气流通
+  example: Proper ventilation in the office is essential to ensure a healtht and comfortable working environment.
+
+intermediate: 
+  title: intermediate
+  text: __intermediate__ [ˏɪntəˈmiːdɪət] a. 中间的，中级的
+  simple: At a level between basic and advanced
+  chinese: 中级的；中等的
+  example: She enrolled in an intermediate Spanish course to improve her language skills after completing the beginner level.
+
+eternal:   
+  title: eternal
+  text: __eternal__ [ɪˈtɜːnl] a. 永恒的
+  simple: Lasting forever, never ending
+  chinese: 永恒的；永久的
+  example: The poet described their love as eternal, lasting beyond the bounds of time and space.
+
+invasion: 
+  title: invasion
+  text: __invasion__ [ɪnˈveɪʒn] n. 入侵，侵略
+  simple: When an army enters a country by force
+  chinese: 入侵；侵略
+  example: The historical records describe the invasion of Normandy as a pivotal moment in World War II.
+
+nevertheless: 
+  title: nevertheless
+  text: |
+    __nevertheless__ [ˏnevəðəˈles] ad. 仍然；然而  
+
+    __nevertheless__ conj. 然而，不过
+  simple: Despite what has just been said, however
+  chinese: 然而；尽管如此
+  example: The weather was rainly and cold; nevertheless, the outdoor event was a great success.
+
+celebrate: 
+  title: celebrate
+  text: __celebrate__ [ˈselɪbreɪt] v. 赞扬，歌颂；庆祝
+  simple: To do something special for an important event or achievement
+  chinese: 庆祝；庆贺
+  example: We gathered to celebrate her promotion with a surprise party and heartfelt toasts.
+
+inspiring: 
+  title: inspiring
+  text: __inspiring__ [ɪn'spaɪərɪŋ] a. 鼓舞（或激励）人心的；启发灵感的
+  simple: Making you feel excited and want to do something
+  chinese: 鼓舞人心的；启发灵感的
+  example: Her speech was incredibly inspiring and motivated everyone to pursue their dreams.
+
+attendance: 
+  title: attendance
+  text: __attendance__ [əˈtendəns] n. 到场，出席；出勤；伺候，照料
+  simple: Being present at a place or event
+  chinese: 出席；到场
+  example: Regular attendance at the meetings is crucial for staying updated on the project's progress.
+
+optional: 
+  title: optional
+  text: __optional__ [ˈɒpʃənl] a. 可选择的，非强制的，随意的
+  simple: Something you can choose to do but don't have to
+  chinese: 可选的；非强制的
+  example: Attending the workshop is optional, but it will greatly enhance your understanding of the topic.
+
+enable:   
+  title: enable
+  text: __enable__ [ɪˈneɪbl] vt. 使能够，使成为可能
+  simple: To make something possible or able to happen
+  chinese: 使能够；使可能
+  example: Advanced technology will enable us to complete the project more efficiently.
+
+departmental: 
+  title: departmental
+  text: __departmental__ [‚diːpɑːt'mentl] a. 部门的
+  simple: Related to a specific department in an organization
+  chinese: 部门的；分部的
+  example: The compay held a departmental meeting to discuss the new policies and their implementation.
+
+heal:      
+  title: heal
+  text: __heal__ [hiːl] v. 治愈，康复；调停
+  simple: To become healthy again after being sick or injured
+  chinese: 治愈；康复
+  example: With time and proper care, the injured athlete was able to heal and return to the game.
+
+dismantle: 
+  title: dismantle
+  text: __dismantle__ [dɪsˈmæntl] vt. 拆除；废除，取消
+  simple: To take something apart piece by piece
+  chinese: 拆除；拆卸
+  example: After the festival, the team worked to dismantle the stage and clean up the area.
+
+wage:      
+  title: wage
+  text: __wage__ [weɪdʒ] n. 工资；[常 pl.] 报酬
+  simple: Money paid to a worker for their job, usually every week
+  chinese: 工资；报酬
+  example: The company decided to increase the minimum wage to attract more skilled workers.
+
+landscape: 
+  title: landscape
+  text: |
+    __landscape__ [ˈlændskeɪp] n. 风景  
+
+    __landscape__ vt. 对……作景观美化，美化（自然环境等）
+  simple: The natural scenery you can see over a large area of land
+  chinese: 风景；景观
+  example: The artist captured the breathtaking landscape of the mountains in his latest painting.
+
+emotion:  
+  title: emotion
+  text: __emotion__ [ɪˈməuʃn] n. 感情；情绪
+  simple: A strong feeling like happiness, sadness, or anger
+  chinese: 情感；情绪
+  example: Her speech was filled with so much that it moved many people to tears.
+
+commonwealth: 
+  title: commonwealth
+  text: __commonwealth__ [ˈkɔmənwelθ] n. [the C-] 英联邦；联合体
+  simple: A group of countries that work together for common goals
+  chinese: 联邦；共同体
+  example: The Commonwealth of Nations works together to promote economic development and cultural exchange among its member countries.
+
+newsletter: 
+  title: newsletter
+  text: __newsletter__ ['njuːzletə] n. 时事通讯，业务通讯
+  simple: A printed or email report with news and information
+  chinese: 时事通讯；简报
+  example: Subscribers receive a monthly newsletter that includes updates on company news and upcoming events.
+
+periodical:
+  title: periodical
+  text: |
+    __periodical__ [‚pɪərɪ'ɑdɪkl] n. 期刊，杂志  
+
+    __periodical__ a. 周期的，定期的
+  simple: A magazine published at regular times
+  chinese: 期刊；杂志
+  example: She enjoys reading the latest in her favorite periodical each month.
+
+receptionist: 
+  title: receptionist
+  text: __receptionist__ [rɪ'sepʃənɪst] n. 接待员
+  simple: A person who greets visitors and answers phone calls in an office
+  chinese: 接待员；前台
+  example: The receptionist greeted visitors with a warm smile and directed them to the appropriate office.
+
+security: 
+  title: security
+  text: __security__ [sɪˈkjuərətɪ] n. 安全，保障；抵押品；[pl.]证券
+  simple: Being safe and protected from danger or harm
+  chinese: 安全；保障
+  example: The company invested in advanced security systems to protect sensitive information from unauthorized access.
+
+clip:      
+  title: clip
+  text: |
+    __clip__ [klɪp] n. （弹簧）夹子，回形针，别针；弹夹；修剪；剪报，电影（或电视）片断  
+
+    __clip__ v.（夹子、回形针等）夹住，扣住；剪，修剪
+  simple: A small device for holding things together, or to cut something short
+  chinese: 夹子；修剪
+  example: She used a paper clip to keep her notes together.
+
+apace:    
+  title: apace
+  text: __apace__ [əˈpeɪs] ad. 快速地，急速地
+  simple: Happening quickly or at a fast rate
+  chinese: 快速地；迅速地
+  example: The construction of the new highway is progressing apace, with the completion expected within a few months.
+
+yield:     
+  title: yield
+  text: |
+    __yield__ [jiːld] n. 产量  
+
+    __yield__ v. 出产；放弃
+  simple: The amount produced, or to give up and accept defeat
+  chinese: 产量；产出
+  example: The new farming techniques increased the crop yield significantly.
+
+fair:     
+  title: fair
+  text: __fair__ [feə(r)] a./ad. 公平的/地
+  simple: Treating everyone equally and in a right way
+  chinese: 公平的；公正的
+  example: The judge ensured that the trial was conducted in a fair and impartial manner.

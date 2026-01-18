@@ -1,13 +1,12 @@
 <template>
   <section class="section">
     <div class="words-header">
-      <h2>提取的单词 ({{ filteredWords.length }})</h2>
+      <h2>{{ chapterTitle || '单词列表' }} ({{ filteredWords.length }})</h2>
       <div class="controls">
         <button class="btn btn-secondary" @click="toggleFilter">
           {{ showUnknownOnly ? '显示全部' : '只看未掌握' }}
         </button>
-        <button class="btn btn-secondary" @click="resetProgress">重置进度</button>
-        <button class="btn btn-danger" @click="clearWords">清空单词</button>
+        <button class="btn btn-primary" @click="startLearning">开始学习</button>
       </div>
     </div>
 
@@ -46,10 +45,14 @@ const props = defineProps({
   words: {
     type: Array,
     required: true
+  },
+  chapterTitle: {
+    type: String,
+    default: ''
   }
 })
 
-const emit = defineEmits(['start-learning', 'back-to-upload'])
+const emit = defineEmits(['start-learning'])
 
 const showUnknownOnly = ref(false)
 
@@ -75,20 +78,6 @@ const progressPercentage = computed(() => {
 
 const toggleFilter = () => {
   showUnknownOnly.value = !showUnknownOnly.value
-}
-
-const resetProgress = () => {
-  if (confirm('确定要重置所有学习进度吗？')) {
-    props.words.forEach(word => word.known = false)
-    localStorage.setItem('ielts_words', JSON.stringify(props.words))
-  }
-}
-
-const clearWords = () => {
-  if (confirm('确定要清空所有单词吗？此操作不可恢复！')) {
-    localStorage.removeItem('ielts_words')
-    emit('back-to-upload')
-  }
 }
 
 const startLearning = () => {

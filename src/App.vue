@@ -2,70 +2,106 @@
   <div class="container">
     <header>
       <h1>📚 IELTS 单词记忆卡</h1>
-      <p class="subtitle">上传YAML文档，AI智能解析，轻松记忆</p>
+      <p class="subtitle">按章节学习，轻松记忆</p>
     </header>
 
-    <main>
-      <!-- 上传组件 -->
-      <UploadSection 
-        v-if="currentView === 'upload'"
-        @words-loaded="handleWordsLoaded"
-      />
+    <!-- 章节菜单 -->
+    <ChapterMenu 
+      v-if="chapters.length > 0 && currentView !== 'cards'"
+      :chapters="chapters"
+      :currentChapter="currentChapter"
+      @select-chapter="handleSelectChapter"
+    />
 
+    <main :class="{ 'with-menu': chapters.length > 0 && currentView !== 'cards' }">
       <!-- 单词列表 -->
       <WordsList 
         v-if="currentView === 'list'"
-        :words="words"
+        :words="currentWords"
+        :chapterTitle="currentChapter"
         @start-learning="handleStartLearning"
-        @back-to-upload="currentView = 'upload'"
       />
 
       <!-- 学习卡片 -->
       <FlashCards 
         v-if="currentView === 'cards'"
-        :words="words"
+        :words="currentWords"
         @back-to-list="currentView = 'list'"
         @update-word="handleUpdateWord"
       />
     </main>
 
     <footer>
-      <p>💡 提示：单词数据保存在浏览器本地存储中 | Vue 3 + Vite + AI驱动</p>
+      <p>💡 提示：单词数据保存在浏览器本地存储中 | Vue 3 + Vite</p>
     </footer>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import yaml from 'js-yaml'
-import UploadSection from './components/UploadSection.vue'
+import { ref, computed, onMounted } from 'vue'
+import { parseCSV, groupByChapter, generateSimpleDefinition } from './utils/csvParser'
+import ChapterMenu from './components/ChapterMenu.vue'
 import WordsList from './components/WordsList.vue'
 import FlashCards from './components/FlashCards.vue'
 
 const currentView = ref('list')
-const words = ref([])
+const chapters = ref([])
+const currentChapter = ref('')
+const allWords = ref([])
 
-// 从 YAML 文件加载单词
-const loadWordsFromYAML = async () => {
+// 当前章节的单词
+const currentWords = computed(() => {
+  if (!currentChapter.value) return []
+  const chapter = chapters.value.find(c => c.title === currentChapter.value)
+  return chapter ? chapter.words : []
+})
+
+// 从 CSV 文件加载单词
+const loadWordsFromCSV = async () => {
   try {
-    // 使用 import.meta.env.BASE_URL 来适配 GitHub Pages 路径
-    const response = await fetch(`${import.meta.env.BASE_URL}static/word-list-01.yaml`)
-    const yamlText = await response.text()
-    const data = yaml.load(yamlText)
+    const csvUrl = `${import.meta.env.BASE_URL}static/word_list.csv`
+    const data = await parseCSV(csvUrl)
     
-    // YAML 数据是对象格式，需要转换为数组
-    const wordsList = Object.values(data).map(item => ({
-      word: item.title,
-      definition: item.simple || item.text || '无释义',
-      simple: item.simple || '无释义',
-      chinese: item.chinese || '无中文翻译',
-      example: item.example || '',
-      text: item.text || '',
+    // 转换为单词对象格式
+    const words = data.map(item => ({
+      word: item.word,
+      meaning: item.meaning,
+      phonetic: item.phonetic,
+      chapter: item.title,
+      sort: item.sort,
+      definition: generateSimpleDefinition(item.word, item.meaning),
+      simple: generateSimpleDefinition(item.word, item.meaning),
+      chinese: item.meaning,
       known: false
     }))
     
-    words.value = wordsList
-    console.log(`已加载 ${wordsList.length} 个单词`, wordsList)
+    allWords.value = words
+    
+    // 按章节分组
+    const groupedChapters = groupByChapter(data)
+    
+    // 为每个章节的单词添加完整信息
+    groupedChapters.forEach(chapter => {
+      chapter.words = chapter.words.map(item => ({
+        word: item.word,
+        meaning: item.meaning,
+        phonetic: item.phonetic,
+        chapter: item.title,
+        definition: generateSimpleDefinition(item.word, item.meaning),
+        simple: generateSimpleDefinition(item.word, item.meaning),
+        chinese: item.meaning,
+        known: false
+      }))
+    })
+    
+    chapters.value = groupedChapters
+    
+    // 默认选择第一章
+    if (chapters.value.length > 0) {
+      currentChapter.value = chapters.value[0].title
+    }
+    
+    console.log(`已加载 ${chapters.value.length} 个章节，共 ${words.length} 个单词`)
   } catch (error) {
     console.error('加载单词文件失败:', error)
   }
@@ -73,13 +109,12 @@ const loadWordsFromYAML = async () => {
 
 // 页面加载时自动加载单词
 onMounted(() => {
-  loadWordsFromYAML()
+  loadWordsFromCSV()
 })
 
-// 处理单词加载完成
-const handleWordsLoaded = (loadedWords) => {
-  words.value = loadedWords
-  localStorage.setItem('ielts_words', JSON.stringify(words.value))
+// 选择章节
+const handleSelectChapter = (chapterTitle) => {
+  currentChapter.value = chapterTitle
   currentView.value = 'list'
 }
 
@@ -90,10 +125,25 @@ const handleStartLearning = () => {
 
 // 更新单词状态
 const handleUpdateWord = (updatedWord) => {
-  const index = words.value.findIndex(w => w.word === updatedWord.word)
-  if (index !== -1) {
-    words.value[index] = updatedWord
-    localStorage.setItem('ielts_words', JSON.stringify(words.value))
+  const chapter = chapters.value.find(c => c.title === currentChapter.value)
+  if (chapter) {
+    const index = chapter.words.findIndex(w => w.word === updatedWord.word)
+    if (index !== -1) {
+      chapter.words[index] = updatedWord
+    }
   }
 }
 </script>
+
+<style>
+main.with-menu {
+  margin-left: 300px;
+  transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  main.with-menu {
+    margin-left: 0;
+  }
+}
+</style>

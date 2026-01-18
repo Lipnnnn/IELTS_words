@@ -178,7 +178,7 @@ onUnmounted(() => {
 
 .flashcard {
   perspective: 1000px;
-  height: 400px;
+  height: 500px;
   margin-bottom: 40px;
 }
 

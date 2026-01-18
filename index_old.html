@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS 单词记忆卡</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 IELTS 单词记忆卡</h1>
+            <p class="subtitle">上传YAML文档，智能提取单词，轻松记忆</p>
+        </header>
+
+        <main>
+            <!-- 上传区域 -->
+            <section id="upload-section" class="section">
+                <div class="upload-area" id="upload-area">
+                    <div class="upload-icon">📄</div>
+                    <h2>上传YAML文件</h2>
+                    <p>点击或拖拽YAML文件到此处</p>
+                    <input type="file" id="file-input" accept=".yaml,.yml" hidden>
+                    <button class="btn btn-primary" id="upload-btn">选择文件</button>
+                </div>
+                <div id="file-info" class="file-info hidden"></div>
+            </section>
+
+            <!-- 单词列表 -->
+            <section id="words-section" class="section hidden">
+                <div class="words-header">
+                    <h2>提取的单词 (<span id="word-count">0</span>)</h2>
+                    <div class="controls">
+                        <button class="btn btn-secondary" id="filter-unknown">只看未掌握</button>
+                        <button class="btn btn-secondary" id="reset-progress">重置进度</button>
+                        <button class="btn btn-danger" id="clear-words">清空单词</button>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                    <span class="progress-text" id="progress-text">已掌握: 0/0</span>
+                </div>
+                <div id="words-list" class="words-list"></div>
+            </section>
+
+            <!-- 单词卡片学习模式 -->
+            <section id="card-section" class="section hidden">
+                <div class="card-header">
+                    <button class="btn btn-secondary" id="back-to-list">← 返回列表</button>
+                    <div class="card-progress">
+                        <span id="current-card">1</span> / <span id="total-cards">0</span>
+                    </div>
+                </div>
+                
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <div class="word-display" id="word-display">点击开始</div>
+                            <p class="hint">点击卡片查看释义</p>
+                        </div>
+                        <div class="flashcard-back">
+                            <div class="word-display-small" id="word-display-back"></div>
+                            <div class="definition" id="definition-display">释义将在这里显示</div>
+                            <p class="hint">点击卡片返回单词</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <button class="btn btn-large btn-danger" id="dont-know">❌ 不认识</button>
+                    <button class="btn btn-large btn-success" id="know">✓ 认识</button>
+                </div>
+
+                <div class="card-navigation">
+                    <button class="btn" id="prev-card">← 上一个</button>
+                    <button class="btn" id="next-card">下一个 →</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>💡 提示：单词数据保存在浏览器本地存储中</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

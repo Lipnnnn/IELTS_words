@@ -1,0 +1,32 @@
+# IELTS 单词示例文件
+
+vocabulary:
+  - word: academic
+    context: university
+  - word: hypothesis
+    context: research
+  - word: methodology
+    context: scientific
+
+reading_passage: |
+  The comprehensive analysis demonstrates remarkable achievements in various domains.
+  Researchers formulated innovative hypotheses through systematic investigation.
+  Academic excellence requires persistent dedication and rigorous methodology.
+  Contemporary scholars emphasize analytical thinking and critical evaluation.
+  
+writing_tips: |
+  Students should develop sophisticated vocabulary gradually.
+  Practice using contextual examples frequently.
+  Understanding nuanced meanings enhances communication effectively.
+
+important_concepts:
+  - accumulate
+  - demonstrate
+  - comprehensive
+  - significant
+  - facilitate
+  - implement
+  - constitute
+  - subsequent
+  - preliminary
+  - fundamental

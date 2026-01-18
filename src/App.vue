@@ -39,7 +39,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { parseCSV, groupByChapter, generateSimpleDefinition } from './utils/csvParser'
+import { parseCSV, groupByChapter } from './utils/csvParser'
 import ChapterMenu from './components/ChapterMenu.vue'
 import WordsList from './components/WordsList.vue'
 import FlashCards from './components/FlashCards.vue'
@@ -69,8 +69,8 @@ const loadWordsFromCSV = async () => {
       phonetic: item.phonetic,
       chapter: item.title,
       sort: item.sort,
-      definition: generateSimpleDefinition(item.word, item.meaning),
-      simple: generateSimpleDefinition(item.word, item.meaning),
+      definition: item.definition || 'A word in this category',
+      simple: item.definition || 'A word in this category',
       chinese: item.meaning,
       known: false
     }))
@@ -87,8 +87,8 @@ const loadWordsFromCSV = async () => {
         meaning: item.meaning,
         phonetic: item.phonetic,
         chapter: item.title,
-        definition: generateSimpleDefinition(item.word, item.meaning),
-        simple: generateSimpleDefinition(item.word, item.meaning),
+        definition: item.definition || 'A word in this category',
+        simple: item.definition || 'A word in this category',
         chinese: item.meaning,
         known: false
       }))
